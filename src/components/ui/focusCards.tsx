@@ -37,7 +37,7 @@ export const Card = React.memo(
 			>
 				<div
 					className={cn(
-						"text-sm p-2 shadow-2xl text-center font-medium text-black",
+						"text-sm p-2 shadow-2xl text-center font-medium text-white",
 						hovered === index && "opacity-100"
 					)}
 				>
