@@ -31,7 +31,7 @@ export default function HeroCard({ image, text }: HeroCardProps) {
 					translateZ={20}
 					className="cursor-pointer px-4 py-2 rounded-xl mx-auto bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
 				>
-					Call (+206-919-6886)
+					<a href="tel:+639052433069">Call (+63)-905-243-3069</a>
 				</CardItem>
 			</CardBody>
 		</CardContainer>

@@ -19,15 +19,15 @@ interface NavigationProps {
 export function Navigation({ children }: NavigationProps) {
 	const navItems = [
 		{
-			name: "Features",
+			name: "About Me",
 			link: "#features",
 		},
 		{
-			name: "Pricing",
+			name: "Tech Stack",
 			link: "#pricing",
 		},
 		{
-			name: "Contact",
+			name: "Experience",
 			link: "#contact",
 		},
 	];
@@ -43,9 +43,9 @@ export function Navigation({ children }: NavigationProps) {
 					<NavItems items={navItems} />
 					<div className="flex items-center gap-4">
 						<NavbarButton variant="secondary">
-							Let's Move
+							Call me
 						</NavbarButton>
-						<NavbarButton variant="primary">Find Now</NavbarButton>
+						<NavbarButton variant="primary">Download CV</NavbarButton>
 					</div>
 				</NavBody>
 

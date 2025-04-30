@@ -12,10 +12,10 @@ export default function Home() {
 		<div>
 			<Navigation>
 				<SectionHero />
-				<SectionSold />
-				<SectionWidget />
-				<SectionGallery />
-				<SectionServices />
+				{/* <SectionSold /> */}
+				{/* <SectionWidget /> */}
+				{/* <SectionGallery /> */}
+				{/* <SectionServices /> */}
 				<SectionForm />
 				<SectionSocial />
 				<SectionFooter />
