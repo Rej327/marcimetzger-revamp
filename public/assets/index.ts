@@ -82,3 +82,14 @@ export { default as Mailmunch } from "./stack/others/mailmunch.png";
 export { default as MailChimp } from "./stack/others/mailchimp.png";
 export { default as i18next } from "./stack/others/i18.png";
 export { default as clerk } from "./stack/others/clerk.webp";
+
+//certificates
+export { default as webCert } from "./cert/web.png";
+export { default as phpCert } from "./cert/php.png";
+export { default as jsCert } from "./cert/js.png";
+export { default as feCert } from "./cert/fe.png";
+export { default as capstoneCert } from "./cert/capstone.png";
+export { default as gradCert } from "./cert/grad.png";
+
+//grid
+export { default as gridLine } from "./img/gridLine.png";

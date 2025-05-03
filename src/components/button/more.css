@@ -1,0 +1,52 @@
+/* From Uiverse.io - customized by ChatGPT for right-arrow and #0B2B1C theme */
+.buttonMore {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #0b2b1c;
+	border: none;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 0 4px rgba(11, 43, 28, 0.3);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	position: relative;
+}
+
+.svgIcon {
+	width: 16px;
+	height: 16px;
+	transition: transform 0.3s ease;
+}
+
+.svgIcon path {
+	fill: white;
+}
+
+.buttonMore:hover {
+	width: 140px;
+	border-radius: 50px;
+	background-color: #154a34;
+	align-items: center;
+}
+
+.buttonMore:hover .svgIcon {
+	transform: translateX(150%);
+}
+
+.buttonMore::before {
+	content: "More";
+	padding-right: 10px;
+	color: white;
+	position: absolute;
+	font-size: 0;
+	transition: all 0.3s ease;
+}
+
+.buttonMore:hover::before {
+	font-size: 14px;
+	transform: translateX(0);
+}

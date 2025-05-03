@@ -13,148 +13,51 @@ import { me, profile } from "../../../public/assets";
 import { ContainerTextFlip } from "./containerTextFlip";
 import HeroCard from "../HeroCard";
 
-export const HeroParallax = ({
-	products,
-}: {
-	products: {
-		title: string;
-		link: string;
-		thumbnail: any;
-	}[];
-}) => {
-	const firstRow = products.slice(0, 14);
-	const secondRow = products.slice(15, 29);
-	const thirdRow = products.slice(30, 44);
-	const fourthRow = products.slice(45, 54);
-	const ref = React.useRef(null);
-	const { scrollYProgress } = useScroll({
-		target: ref,
-		offset: ["start start", "end start"],
-	});
-
-	const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
-
-	const translateX = useSpring(
-		useTransform(scrollYProgress, [0, 1], [0, 1000]),
-		springConfig
-	);
-	const translateXReverse = useSpring(
-		useTransform(scrollYProgress, [0, 1], [0, -1500]),
-		springConfig
-	);
-	const rotateX = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-		springConfig
-	);
-	const opacity = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-		springConfig
-	);
-	const rotateZ = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-		springConfig
-	);
-	const translateY = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
-		springConfig
-	);
-	const headingOpacity = useSpring(
-		useTransform(scrollYProgress, [0, 50], [0, 90]),
-		springConfig
-	);
-	return (
-		<div
-			ref={ref}
-			className="h-[300vh] overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
-		>
-			<Header />
-			<motion.div
-				style={{
-					rotateX,
-					rotateZ,
-					translateY,
-					opacity,
-				}}
-				className=""
-			>
-				<motion.h2
-					className="text-center mb-20 text-2xl top-0 sectionHead text-black"
-					style={{ opacity: headingOpacity }}
-				>
-					Tech Stack
-				</motion.h2>
-				<motion.div className="flex flex-row-reverse space-x-reverse space-x-14 mb-20">
-					{firstRow.map((product) => (
-						<ProductCard
-							product={product}
-							translate={translateX}
-							key={product.title}
-						/>
-					))}
-				</motion.div>
-				<motion.div className="flex flex-row mb-20 space-x-14">
-					{secondRow.map((product) => (
-						<ProductCard
-							product={product}
-							translate={translateXReverse}
-							key={product.title}
-						/>
-					))}
-				</motion.div>
-				<motion.div className="flex flex-row-reverse space-x-reverse space-x-14 mb-20">
-					{thirdRow.map((product) => (
-						<ProductCard
-							product={product}
-							translate={translateX}
-							key={product.title}
-						/>
-					))}
-				</motion.div>
-				<motion.div className="flex flex-row mb-20 space-x-14">
-					{fourthRow.map((product) => (
-						<ProductCard
-							product={product}
-							translate={translateXReverse}
-							key={product.title}
-						/>
-					))}
-				</motion.div>
-			</motion.div>
-		</div>
-	);
-};
+import More from "../button/More";
 
 export const Header = () => {
 	return (
-		<motion.div
-			initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
-			animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-			transition={{
-				duration: 0.5,
-				delay: 0.1,
-				ease: "easeInOut",
-			}}
-			className="z-50 bg-white/0 max-w-7xl relative mx-auto py-4 md:pt-40 md:flex md:flex-row-reverse justify-between items-center px-4 w-full left-0 top-0"
+		<div
+			className="relative bg-cover bg-center bg-no-repeat"
+			style={{
+				backgroundImage: `url('../../../public/assets/img/gridLine.png')`,
+			}} // replace with your actual image path
 		>
-			<HeroCard image={me} text="" />
-			<div>
-				<h1 className="mt-10 w-fit mx-auto text-center md:text-left md:mx-0 md:mt-0 text-2xl md:text-6xl font-bold dark:text-white">
-					Jefferson R.
-					<span className="flex items-center justify-center gap-0 my-4">
-						<ContainerTextFlip
-							words={["Web", "App", "Front-End"]}
-						/>
-						Developer
-					</span>
-				</h1>
-				<p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 text-justify">
-					Hi! I’m Jefferson Resurreccion, 26 years old, a Web/App
-					Developer with two years of freelance experience
-					specializing in modern JavaScript frameworks, particularly
-					React.js, Next.js, and React Native.
-				</p>
-			</div>
-		</motion.div>
+			{/* <div className="bg-black/50 w-full h-full absolute inset-0 z-0" />{" "} */}
+			{/* Optional: dark overlay */}
+			<motion.div
+				initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+				animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+				transition={{
+					duration: 0.5,
+					delay: 0.1,
+					ease: "easeInOut",
+				}}
+				className="relative z-10 md:px-[22rem] mx-auto py-4 md:pt-10 md:flex md:flex-row-reverse justify-between items-center px-4 w-full left-0 top-0"
+			>
+				<HeroCard image={me} text="" />
+				<div>
+					<h1 className="mt-10 w-fit mx-auto text-center md:text-left md:mx-0 md:mt-0 text-2xl md:text-6xl font-bold name">
+						Jefferson R.
+						<span className="flex items-center justify-center gap-0 my-4">
+							<ContainerTextFlip
+								words={["Web", "App", "Front-End"]}
+							/>
+							Developer
+						</span>
+					</h1>
+					<p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 text-justify">
+						Hi! I’m Jefferson Resurreccion, 26 years old, a Web/App
+						Developer with two years of freelance experience
+						specializing in modern JavaScript frameworks,
+						particularly React.js, Next.js, and React Native.
+					</p>
+					<div className="mt-4">
+						<More />
+					</div>
+				</div>
+			</motion.div>
+		</div>
 	);
 };
 

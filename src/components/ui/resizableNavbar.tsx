@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { div } from "framer-motion/client";
 
 interface NavbarProps {
 	children: React.ReactNode;
@@ -161,10 +162,12 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
 					{hovered === idx && (
 						<motion.div
 							layoutId="hovered"
-							className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+							className="absolute inset-0 h-full w-full rounded-full bg-[#0b2b1c38] dark:bg-neutral-800"
 						/>
 					)}
-					<span className="relative z-20 text-base">{item.name}</span>
+					<span className="relative z-20 text-base text-gray-800">
+						{item.name}
+					</span>
 				</Link>
 			))}
 		</motion.div>
@@ -295,9 +298,7 @@ export const NavbarLogo = () => {
 				width={30}
 				height={30}
 			/>
-			<span className="font-medium text-black dark:text-white">
-				MMH
-			</span>
+			<span className="font-medium text-black dark:text-white">JRR</span>
 		</Link>
 	);
 };
