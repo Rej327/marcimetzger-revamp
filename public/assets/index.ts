@@ -57,6 +57,7 @@ export { default as socketio } from "./stack/backend/socketio.png";
 export { default as sqlqueries } from "./stack/backend/sqlqueries.png";
 export { default as api } from "./stack/backend/api.png";
 export { default as localStorage } from "./stack/backend/localstorage.png";
+export { default as laravel } from "./stack/backend/laravel.png";
 export { default as firebase } from "./stack/backend/firebase.webp";
 
 //other stack
@@ -82,6 +83,7 @@ export { default as Mailmunch } from "./stack/others/mailmunch.png";
 export { default as MailChimp } from "./stack/others/mailchimp.png";
 export { default as i18next } from "./stack/others/i18.png";
 export { default as clerk } from "./stack/others/clerk.webp";
+export { default as supabase } from "./stack/backend/supabase.png";
 
 //certificates
 export { default as webCert } from "./cert/web.png";

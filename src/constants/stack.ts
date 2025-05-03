@@ -52,6 +52,8 @@ import {
 	nativewind,
 	firebase,
 	clerk,
+	supabase,
+	laravel,
 } from "../../public/assets/index";
 
 export const frontend = [
@@ -163,6 +165,10 @@ export const backend = [
 		img: codeigniter,
 	},
 	{
+		stack: "Laravel",
+		img: laravel,
+	},
+	{
 		stack: "MongoDB",
 		img: mongodb,
 	},
@@ -193,6 +199,10 @@ export const backend = [
 	{
 		stack: "Firebase",
 		img: firebase,
+	},
+	{
+		stack: "Supabase",
+		img: supabase,
 	},
 ];
 

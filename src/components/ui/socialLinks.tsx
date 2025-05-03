@@ -58,8 +58,12 @@ const SocialLinks = () => {
 					title={label}
 					className="group flex items-center gap-2 text-4xl transition-colors"
 				>
-					<Icon className={`text-4xl transition-colors ${hoverColor}`} />
-					<span className={`text-2xl transition-colors ${hoverColor}`}>
+					<Icon
+						className={`text-4xl transition-colors ${hoverColor}`}
+					/>
+					<span
+						className={`text-2xl transition-colors ${hoverColor}`}
+					>
 						{label}
 					</span>
 				</a>

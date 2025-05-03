@@ -16,9 +16,6 @@ export default function Home() {
 		<div>
 			<Navigation>
 				<Header />
-				<div className="mx-auto w-fit">
-					<SocialLinks />
-				</div>
 				<div className="mt-40 mx-auto bg-white w-full z-100">
 					<SectionTraining />
 				</div>
