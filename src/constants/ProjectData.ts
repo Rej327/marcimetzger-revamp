@@ -40,11 +40,11 @@ type Features = {
 };
 
 type ProjectType = {
-	img: StaticImageData[];
+	img: StaticImageData[] | StaticImageData;
 	title: string;
 	duration: string;
 	technology: Tech[];
-	features: Features;
+	features: Features | string[];
 	code: string;
 	demo: string;
 };
@@ -202,6 +202,50 @@ export const projects: ProjectType[] = [
 		code: "https://github.com/Rej327/EC-Immunization.git",
 		demo: "https://youtu.be/squHep56Y88",
 	},
+
+	//lesscode projects
+	{
+		img: shopify_one,
+		title: "Cymbal Sheesh",
+		duration: "Project Duration: 1 day",
+		technology: [
+			{
+				name: "Shopify",
+				icon: shopify,
+			},
+		],
+		features: [
+			"Add to Cart Function",
+			"Data Collection for Filtering Items",
+			"Filter Function",
+			"Search Function",
+			"Cart Total Price Calculation",
+			"Subscription Function",
+		],
+		code: "",
+		demo: "https://www.youtube.com/watch?v=8ZtEUIp5WXs",
+	},
+	{
+		img: wordpress_one,
+		title: "Event Center",
+		duration: "Project Duration: 1 day",
+		technology: [
+			{
+				name: "Wordpress",
+				icon: wordpress,
+			},
+		],
+		features: [
+			"Contact Information and Support",
+			"Event Details",
+			"Package Details",
+			"Coordinator Information",
+			"Static Data Retrieval",
+			"Contact Form Function",
+		],
+		code: "",
+		demo: "https://www.youtube.com/watch?v=2kIZ46cFErs",
+	},
 ];
 
 export const lessCode: LessCode[] = [
@@ -246,3 +290,63 @@ export const lessCode: LessCode[] = [
 		demo: "https://www.youtube.com/watch?v=2kIZ46cFErs",
 	},
 ];
+
+type StackDataProps = {
+	id: number;
+	name: string;
+	designation: string;
+	image: StaticImageData;
+};
+
+export const ecImmunizationAppStackData: StackDataProps[] = [
+	{
+		id: 1,
+		name: "React Native",
+		designation: "UI Framework",
+		image: reactnative,
+	},
+	{
+		id: 2,
+		name: "Expo Go",
+		designation: "Toolchain",
+		image: expo,
+	},
+	{
+		id: 3,
+		name: "NativeWind",
+		designation: "Styling",
+		image: nativewind,
+	},
+	{
+		id: 4,
+		name: "Clerk",
+		designation: "Authentication",
+		image: clerk,
+	},
+	{
+		id: 5,
+		name: "Firebase",
+		designation: "Backend as a Service",
+		image: firebase,
+	},
+];
+export const EventCenterStack: StackDataProps[] = [
+	{
+		id: 1,
+		name: "Wordpress",
+		designation: "Content Management System",
+		image: wordpress,
+	},
+];
+export const CymablSheeshStack: StackDataProps[] = [
+	{
+		id: 1,
+		name: "Shopify",
+		designation: "E-commerce Platform",
+		image: shopify,
+	},
+];
+
+export const ecImmunizationImageData: StaticImageData[] = [ec, ec2];
+export const EventCenterImageData: StaticImageData[] = [wordpress_one];
+export const CymablSheeshImageData: StaticImageData[] = [shopify_one];

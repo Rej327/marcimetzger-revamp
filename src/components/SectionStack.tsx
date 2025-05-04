@@ -12,7 +12,7 @@ export default function SectionStack() {
 			<GridLine color="rgba(146, 146, 146, 0.116)" />
 			<div className="mx-auto px-4 py-2 mt-10 rounded-full border-1 bg-black/40 border-[#e5e4e05e]  flex gap-2 w-fit items-center shadow-sm">
 				<FaRegFileCode className="text-white" />
-				<h2 className="uppercase text-center text-sm text-white font-semibold tracking-wider">
+				<h2 className="uppercase text-center text-sm text-[#E5E4E0] font-semibold tracking-wider">
 					Technology Stacks
 				</h2>
 			</div>

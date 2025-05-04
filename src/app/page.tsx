@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import SectionFooter from "@/components/SectionFooter";
 import SectionForm from "@/components/SectionForm";
 import { SectionGallery } from "@/components/SectionGallery";
+import { SectionProjects } from "@/components/SectionProjects";
 // import { SectionHero } from "@/components/SectionHero.tsx";
 import { SectionServices } from "@/components/SectionServices";
 import SectionSocial from "@/components/SectionSocial";
@@ -24,6 +25,7 @@ export default function Home() {
 						<SectionStack />
 					</div>
 				</div>
+				<SectionProjects />
 				{/* <SectionHero /> */}
 				{/* <SectionSold /> */}
 				{/* <SectionWidget /> */}
