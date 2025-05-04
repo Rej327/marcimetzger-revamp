@@ -13,8 +13,23 @@ import "./globals.css";
 // });
 
 export const metadata: Metadata = {
-	title: "Marci Metzger Homes",
-	description: "Real Estate Agent, Real Estate, Realtor",
+	title: "Jefferson R.",
+	icons: {
+		icon: "/logo.png",
+	},
+	description: "Jefferson Resuena - Web Developer Portfolio",
+	viewport: {
+		width: "device-width",
+		initialScale: 1,
+		maximumScale: 1,
+		minimumScale: 1,
+		userScalable: false,
+	},
+	themeColor: "#263F3D",
+	appleWebApp: {
+		title: "Jefferson R.",
+		statusBarStyle: "black-translucent",
+	},
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ import { backend, frontend, others } from "@/constants/stack";
 
 export default function SectionStack() {
 	return (
-		<div className="relative h-auto py-10 overflow-hidden">
+		<div id="stack" className="relative h-auto py-10 overflow-hidden">
 			<GridLine color="rgba(146, 146, 146, 0.116)" />
 			<div className="mx-auto px-4 py-2 mt-10 rounded-full border-1 bg-black/40 border-[#e5e4e05e]  flex gap-2 w-fit items-center shadow-sm">
 				<FaRegFileCode className="text-white" />

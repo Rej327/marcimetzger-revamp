@@ -1,6 +1,5 @@
 export { default as profile } from "./img/profile.webp";
 
-
 //icon
 export { default as wave } from "./icon/wave.gif";
 export { default as about } from "./icon/about.png";
@@ -95,3 +94,6 @@ export { default as gradCert } from "./cert/grad.png";
 
 //grid
 export { default as gridLine } from "./img/gridLine.png";
+
+//resume
+export { default as resume } from "./img/resumess.png";

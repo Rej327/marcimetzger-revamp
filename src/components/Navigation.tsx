@@ -19,22 +19,26 @@ interface NavigationProps {
 export function Navigation({ children }: NavigationProps) {
 	const navItems = [
 		{
-			name: "About Me",
-			link: "#features",
+			name: "Training",
+			link: "#certificates",
 		},
 		{
-			name: "Tech Stack",
-			link: "#pricing",
+			name: "Stack",
+			link: "#stack",
 		},
 		{
 			name: "Experience",
-			link: "#contact",
+			link: "#experience",
+		},
+		{
+			name: "Resume",
+			link: "#resume",
 		},
 	];
 
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-	return ( 
+	return (
 		<div className="relative w-full bg-[#E5E4E0]">
 			<Navbar>
 				{/* Desktop Navigation */}
@@ -50,6 +54,8 @@ export function Navigation({ children }: NavigationProps) {
 							Call me
 						</NavbarButton>
 						<NavbarButton
+							href="/JeffersonResurreccion-resume.pdf"
+							download
 							variant="primary"
 							className="bg-[#0B2B1C] text-white"
 						>
@@ -88,18 +94,19 @@ export function Navigation({ children }: NavigationProps) {
 						))}
 						<div className="flex w-full flex-col gap-4">
 							<NavbarButton
-								onClick={() => setIsMobileMenuOpen(false)}
-								variant="primary"
-								className="w-full"
+								variant="secondary"
+								className="bg-[#E5E4E0] text-[#0B2B1C]"
+								onClick={() => window.open("tel:+639052433069")}
 							>
-								Let's Move
+								Call me
 							</NavbarButton>
 							<NavbarButton
-								onClick={() => setIsMobileMenuOpen(false)}
+								href="/JeffersonResurreccion-resume.pdf"
+								download
 								variant="primary"
-								className="w-full"
+								className="bg-[#0B2B1C] text-white"
 							>
-								Find Now
+								Download CV
 							</NavbarButton>
 						</div>
 					</MobileNavMenu>

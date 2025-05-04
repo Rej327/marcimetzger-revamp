@@ -16,14 +16,15 @@
 	position: relative;
 }
 
-.svgIcon {
+.arrow {
 	width: 16px;
 	height: 16px;
 	transition: transform 0.3s ease;
 }
 
-.svgIcon path {
-	fill: white;
+/* Rotate the arrow when hovering the buttonMore */
+.arrow {
+	transform: rotate(-90deg); /* Rotate the arrow to point down */
 }
 
 .buttonMore:hover {
@@ -33,8 +34,8 @@
 	align-items: center;
 }
 
-.buttonMore:hover .svgIcon {
-	transform: translateX(150%);
+.buttonMore:hover .arrow {
+	transform: translateX(150%); /* Keep existing translateX on hover */
 }
 
 .buttonMore::before {

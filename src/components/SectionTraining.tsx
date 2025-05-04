@@ -5,7 +5,7 @@ import { BiSolidCertification } from "react-icons/bi";
 
 export default function SectionTraining() {
 	return (
-		<div className="relative h-auto py-10">
+		<div id="certificates" className="relative h-auto py-10">
 			<div className="mx-auto px-4 py-2 mt-10 rounded-full border-1 border-[#E5E4E0]  flex gap-2 w-fit items-center shadow-sm">
 				<GrCertificate className="text-[#134b31]" />
 				<h2 className="uppercase text-center text-sm text-[#134b31] font-semibold tracking-wider">

@@ -3,6 +3,7 @@ import SectionFooter from "@/components/SectionFooter";
 import SectionForm from "@/components/SectionForm";
 import { SectionGallery } from "@/components/SectionGallery";
 import { SectionProjects } from "@/components/SectionProjects";
+import { SectionResume } from "@/components/SectionResume";
 // import { SectionHero } from "@/components/SectionHero.tsx";
 import { SectionServices } from "@/components/SectionServices";
 import SectionSocial from "@/components/SectionSocial";
@@ -21,19 +22,13 @@ export default function Home() {
 					<SectionTraining />
 				</div>
 				<div className="bg-white w-full">
-					<div className="bg-[#263f3d] mx-auto rounded-lg w-[94%]">
+					<div className="bg-[#263F3D] mx-auto rounded-lg w-[94%]">
 						<SectionStack />
 					</div>
 				</div>
 				<SectionProjects />
-				{/* <SectionHero /> */}
-				{/* <SectionSold /> */}
-				{/* <SectionWidget /> */}
-				{/* <SectionGallery /> */}
-				{/* <SectionServices /> */}
-				{/* <SectionForm /> */}
-				{/* <SectionSocial /> */}
-				{/* <SectionFooter /> */}
+				<SectionResume />
+				<SectionFooter />
 			</Navigation>
 		</div>
 	);

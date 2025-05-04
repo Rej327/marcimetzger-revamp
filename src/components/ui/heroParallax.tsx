@@ -19,7 +19,7 @@ import CenterGradient from "./centergradient";
 
 export const Header = () => {
 	return (
-		<div className="relative overflow-hidden">
+		<div id="top" className="relative overflow-hidden">
 			<GridLine color="rgba(0, 0, 0, 0.05)" />
 			<CenterGradient />
 			<motion.div

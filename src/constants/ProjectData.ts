@@ -17,6 +17,7 @@ import {
 	Mailmunch,
 	mantine,
 	nativewind,
+	reactjs,
 	reactnative,
 	redux,
 	shopify,
@@ -347,6 +348,105 @@ export const CymablSheeshStack: StackDataProps[] = [
 	},
 ];
 
+export const DiscoverCatanauanStackData: StackDataProps[] = [
+  {
+    id: 1,
+    name: "React",
+    designation: "UI Library",
+    image: reactjs,
+  },
+  {
+    id: 2,
+    name: "Vite",
+    designation: "Build Tool",
+    image: vite,
+  },
+  {
+    id: 3,
+    name: "Tailwind CSS",
+    designation: "Styling",
+    image: tailwindcss,
+  },
+  {
+    id: 4,
+    name: "Chakra UI",
+    designation: "Component Library",
+    image: chakraui,
+  },
+  {
+    id: 5,
+    name: "Mailchimp",
+    designation: "Email Marketing",
+    image: MailChimp,
+  },
+  {
+    id: 6,
+    name: "Mailmunch",
+    designation: "Lead Generation",
+    image: Mailmunch,
+  },
+  {
+    id: 7,
+    name: "i18next",
+    designation: "Localization",
+    image: i18next,
+  },
+];
+export const DisasterGuardStackData: StackDataProps[] = [
+  {
+    id: 1,
+    name: "React",
+    designation: "UI Library",
+    image: reactjs,
+  },
+  {
+    id: 2,
+    name: "Vite",
+    designation: "Build Tool",
+    image: vite,
+  },
+  {
+    id: 3,
+    name: "Tailwind CSS",
+    designation: "Styling",
+    image: tailwindcss,
+  },
+  {
+    id: 4,
+    name: "Mantine UI",
+    designation: "Component Library",
+    image: mantine,
+  },
+  {
+    id: 5,
+    name: "API",
+    designation: "Data Fetching",
+    image: api,
+  },
+  {
+    id: 6,
+    name: "Local Storage",
+    designation: "Client Storage",
+    image: localStorage,
+  },
+  {
+    id: 7,
+    name: "i18next",
+    designation: "Localization",
+    image: i18next,
+  },
+];
+
+
 export const ecImmunizationImageData: StaticImageData[] = [ec, ec2];
 export const EventCenterImageData: StaticImageData[] = [wordpress_one];
 export const CymablSheeshImageData: StaticImageData[] = [shopify_one];
+
+export const DiscoverCatanauanImageData: StaticImageData[] = [
+	catanauan,
+	catanauan2,
+];
+export const DisasterGuardImageData: StaticImageData[] = [
+	disaster,
+	disaster2,
+];
